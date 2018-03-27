@@ -14,8 +14,11 @@
 .head .circle {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 50%;
+  margin-left: -400px;
 	z-index: 1;
+}
+.head .circle img {
 }
 .head .title {
 	position: absolute;
@@ -23,6 +26,12 @@
 	left: 50%;
 	margin-left: -248px;
 	z-index: 10;
+}
+.head .R6E {
+  position: absolute;
+  bottom: 58px;
+  left: 726px;
+  z-index: 11;
 }
 .head .porducts {
 	position: absolute;
@@ -72,9 +81,9 @@
     }
 }
 .circle {
-	-webkit-animation: circle 10s  linear infinite;
-    -o-animation: circle 10s linear infinite;
-    animation: circle 10s linear infinite;
+	-webkit-animation: circle 12s  linear infinite;
+    -o-animation: circle 12s linear infinite;
+    animation: circle 12s linear infinite;
 }
 @keyframes circle {
     from {
