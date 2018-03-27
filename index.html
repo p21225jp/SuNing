@@ -7,15 +7,140 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="css/public.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <style type="text/css">
+        .head {
+            background: url(img/head.jpg) no-repeat;
+            width: 1920px;
+            height: 977px;
+            position: relative;
+        }
+        .head .circle_I {
+            position: absolute;
+            
+            z-index: 1;
+        }
+        .head .circle img {
+        }
+        .head .title {
+            position: absolute;
+            top: 224px;
+            left: 50%;
+            margin-left: -289px;
+            z-index: 10;
+        }
+        .head .R6E {
+          position: absolute;
+          bottom: 58px;
+          left: 726px;
+          z-index: 11;
+        }
+        .head .porducts {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        .color-run {
+            -webkit-animation: colorrun 5s infinite;
+            -o-animation: colorrun 5s infinite;
+            animation: colorrun 5s infinite;
+        }
+
+        @keyframes colorrun {
+            from {
+              -webkit-filter: hue-rotate(0deg);
+              filter: hue-rotate(0deg);
+            }
+            to {
+              -webkit-filter: hue-rotate(359deg);
+              filter: hue-rotate(359deg);
+            }
+        }
+        @-webkit-keyframes colorrun {
+            from {-webkit-filter: hue-rotate(0deg);}
+            to {-webkit-filter: hue-rotate(359deg);}
+        }
+        .blink {
+            -webkit-animation: blink 1.5s linear alternate infinite;
+            -o-animation: blink 1.5s linear alternate infinite;
+            animation: blink 1.5s linear alternate infinite;
+        }
+        @keyframes blink {
+            from {
+              opacity: 1;
+            }
+            to {
+              opacity: 0;
+            }
+        }
+        @-webkit-keyframes blink {
+            from {
+              opacity: 1;
+            }
+            to {
+              opacity: 0;
+            }
+        }
+        .circle_s {
+            -webkit-animation: circle_s 18s  linear infinite;
+            -o-animation: circle_s 18s linear infinite;
+            animation: circle_s 18s linear infinite;
+        }
+        .circle {
+            -webkit-animation: circle 20s  linear infinite;
+            -o-animation: circle 20s linear infinite;
+            animation: circle 20s linear infinite;
+        }
+        @keyframes circle {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        @-webkit-keyframes circle {
+            from {
+              -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+        @keyframes circle_s {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-359deg);
+            }
+        }
+        @-webkit-keyframes circle_s {
+            from {
+              -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(-359deg);
+            }
+        }
+    </style>
     <div class="head">
         <div class="R6E">
             <img src="img/R6E.png" alt="">
         </div>
-    	<div class="circle">
-    		<img src="img/circle.png" alt="">
+        <div class="circle_I circle_s" style="top: 116px;left: 452px;" >
+            <img src="img/HUD-3.png" width="100">
+        </div>
+        <div class="circle_I circle_s" style="top: 430px;left: 394px;">
+            <img src="img/HUD-4.png" width="100">
+        </div>
+        <div class="circle_I circle_s" style="top: 308px;left: 1282px;" >
+            <img src="img/HUD-5.png" width="100">
+        </div>
+    	<div class="circle_I circle" style="top: 60px;left: 50%;margin-left: -412px;">
+    		<img src="img/circle.png" alt="" width="700">
     	</div>
     	<div class="title">
     		<img src="img/title.png" alt="">
